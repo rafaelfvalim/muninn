@@ -64,6 +64,7 @@ public class ControleClienteController {
 	public String editConsultorCliente(@PathVariable("id") long id, Model model) {
 		ControleCliente controleCliente = controleClienteRepository.findById(id)
 				.orElseThrow(() -> new IllegalArgumentException("Invalid Consultor Id:" + id));
+		
 		model.addAttribute("controleCliente", controleCliente);
 		return "/pages/update-contole-cliente";
 	}

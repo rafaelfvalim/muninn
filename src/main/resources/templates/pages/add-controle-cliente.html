@@ -22,7 +22,7 @@
 					<fieldset class="last-child">
 						<div class="form-group row">
 							<label class="col-md-2 col-form-label">Cliente</label>
-							<div class="col-md-10">
+							<div class="col-md-2">
 								<select class="custom-select custom-select-lg mb-3" th:field="*{clienteId}">
 									<option th:each="cliente : ${clientes}" th:value="${cliente.id}" th:utext="${cliente.nome}" />
 								</select>
@@ -32,7 +32,7 @@
 					<fieldset>
 						<div class="form-group row">
 							<label class="col-md-2 col-form-label" for="input-id-1">Numero Chamado</label>
-							<div class="col-md-10">
+							<div class="col-md-5">
 								<input class="form-control" id="input-id-1" type="text" th:field="*{numeroChamado}">
 							</div>
 						</div>
@@ -40,7 +40,7 @@
 					<fieldset>
 						<div class="form-group row">
 							<label class="col-md-2 col-form-label" for="input-id-1">Motivo</label>
-							<div class="col-md-10">
+							<div class="col-md-5">
 								<input class="form-control" id="input-id-1" type="text" th:field="*{motivo}">
 							</div>
 						</div>
@@ -48,7 +48,7 @@
 					<fieldset>
 						<div class="form-group row">
 							<label class="col-md-2 col-form-label" for="input-id-1">Usuário Atuante</label>
-							<div class="col-md-10">
+							<div class="col-md-5">
 								<input class="form-control" id="input-id-1" type="text" th:field="*{usuarioAtuante}">
 							</div>
 						</div>
@@ -56,7 +56,7 @@
 					<fieldset>
 						<div class="form-group row">
 							<label class="col-md-2 col-form-label" for="input-id-1">Core</label>
-							<div class="col-md-10">
+							<div class="col-md-5">
 								<input class="form-control" id="input-id-1" type="text" th:field="*{core}">
 							</div>
 						</div>
@@ -64,7 +64,7 @@
 					<fieldset class="last-child">
 						<div class="form-group row">
 							<label class="col-md-2 col-form-label">Consultor</label>
-							<div class="col-md-10">
+							<div class="col-md-2">
 								<select class="custom-select custom-select-lg mb-3" th:field="*{consultorId}">
 									<option th:each="consultor : ${consultores}" th:value="${consultor.id}"
 										th:utext="${consultor.nome}" />
@@ -75,7 +75,7 @@
 					<fieldset>
 						<div class="form-group row">
 							<label class="col-md-2 col-form-label" for="input-id-1">Cr Aplicada</label>
-							<div class="col-md-10">
+							<div class="col-md-5">
 								<input class="form-control" id="input-id-1" type="text" th:field="*{crAplicada}">
 							</div>
 						</div>
