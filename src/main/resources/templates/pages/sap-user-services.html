@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org" layout:decorator="layout">
+<head>
+<title>Octa Hub</title>
+<meta charset="UTF-8">
+
+</head>
+<body>
+	<section class="section-container" layout:fragment="content">
+	<!-- Page content-->
+	<div class="content-wrapper">
+		<div class="content-heading">
+			<div>
+				SU01<small>Ações de conta do usuário</small>
+			</div>
+		</div>
+		<!-- START row-->
+		<div class="row">
+			<div class="col-md-6">
+				<!-- START card-->
+				<div class="card card-default">
+					<div class="card-header">Troca de senha, bloqeuio e
+						desbloqueio</div>
+					<div class="card-body">
+						<form>
+							<div class="form-group">
+								<label>Usuário SAP</label><input class="form-control"
+									type="name" placeholder="User ID" id="userId"
+									th:value="${usuario}" disabled="disabled">
+							</div>
+							<div class="form-group">
+								<label>Senha Atual</label><input class="form-control"
+									type="password" placeholder="Password" id="password">
+							</div>
+							<div class="form-group">
+								<label>Nova Senha</label><input class="form-control"
+									type="password" placeholder="Password" id="newPassword">
+							</div>
+							<button class="btn btn-labeled btn-success mb-2" type="button">
+								<span class="btn-label"><i class="fas fa-check"></i></span>Trocar
+								Senha
+							</button>
+
+							<button class="btn btn-labeled btn-info mb-2" type="button">
+								<span class="btn-label"><i class="fas fa-lock-open"></i></span>Desbloqueio
+							</button>
+							<button class="btn btn-labeled btn-warning mb-2" type="button">
+								<span class="btn-label"><i class="fas fa-lock"></i></span>Bloqueio
+							</button>
+						</form>
+					</div>
+				</div>
+				<!-- END card-->
+			</div>
+			<!-- END card-->
+		</div>
+	</section>
+	<!-- Page footer-->
+</body>
+</html>
